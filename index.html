@@ -8,6 +8,15 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+
   <!-- style link -->
   <link rel="stylesheet" href="style.css">
   <!-- icon link -->
@@ -17,6 +26,10 @@
 </head>
 
 <body>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+</div>
+
   <nav>
     <div class="nav-container1">
       <div class="box-1">
@@ -70,7 +83,7 @@
     <section class="aa" id="home">
       <div class="banner">
         <nav class="navbar container navbar-expand-lg navbar-light">
-          <a class="navbar-brand nav-lo" href="#">JONA<span id="logo-span">DEV</span></a>
+          <a class="navbar-brand nav-lo" href="index.html">JONA<span id="logo-span">DEV</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -80,25 +93,30 @@
           <div class="collapse navbar-collapse " id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link navbarlink" href="#">Home</a>
+                <a class="nav-link navbarlink" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navbarlink" href="#">services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbarlink" href="#">Works</a>
+                <a class="nav-link navbarlink" href="#service">services</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link navbarlink" href="#">Testimonials</a>
+                <a class="nav-link navbarlink" href="#work-sec">Works</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link navbarlink" href="#">LatestNews</a>
+                <a class="nav-link navbarlink" href="#about-sec">About</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link navbarlink" href="#">contact </a>
+                <a class="nav-link navbarlink" href="#test-sec">Testimonials</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link navbarlink" href="#news-sec">LatestNews</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link navbarlink" href="#contact">contact </a>
               </li>
             </ul>
           </div>
@@ -767,6 +785,7 @@
 
 
   <script src="app.js"></script>
+  <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>

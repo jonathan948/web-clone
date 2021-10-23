@@ -4,12 +4,43 @@
     box-sizing: border-box;
 }
 
-/* html{
+html{
     scroll-behavior: smooth;
-} */
+}
+
+
+::selection{
+    background-color: rgb(18, 173, 166);
+}
 
 body{
     background-color: lightgray;
+}
+
+/* button scroll */
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* nav styling start */
@@ -60,9 +91,10 @@ body{
 }
 
 .fa-times{
-    margin: 10px;
+    margin: 20px;
     font-size: 20px;
     cursor: pointer;
+    margin-top: 25px;
 }
 
 .fa-bars{
@@ -136,7 +168,7 @@ body{
     text-transform: capitalize;
     border-radius: 30px;
     float: right;
-    font-size: 13px;
+    font-size: 15px;
     width: 8%;
     margin: 6px;
     border: none !important;
@@ -289,6 +321,7 @@ body{
     width: 10% !important;
     font-size: 13px;
     border-bottom: solid 2px white;
+    margin-top: 20px;
 }
 
 .service-card-container{
