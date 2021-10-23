@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+/* html{
+    scroll-behavior: smooth;
+} */
+
 body{
     background-color: lightgray;
 }
 
 /* nav styling start */
 .nav-container{
-    margin-top: 6%;
+    margin-top: 4%;
     padding-top: 16px;
     background-color: white;
 }
@@ -23,6 +27,17 @@ body{
     z-index: 1;
     background-color: white;
     border-bottom: solid 1px lightgray ;
+}
+
+.nav-container1-monbile{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    border-bottom: solid 1px lightgray ;
+    display: none;
 }
 
 .box-nav{
@@ -110,7 +125,7 @@ body{
     padding: 10px;
     border-radius: 50px;
     float: right;
-    margin: 10px;
+    margin: 5px;
     font-size: 13px;
     cursor: pointer;
 }
@@ -122,6 +137,7 @@ body{
     border-radius: 30px;
     float: right;
     font-size: 13px;
+    width: 8%;
     margin: 6px;
     border: none !important;
     outline: none !important;
@@ -160,6 +176,21 @@ body{
     color: black;
 }
 
+/* main nav */
+.nav-lo{
+    color: white !important;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.nav-link{
+    color: rgb(18, 173, 166) !important;
+    margin: 0px;
+}
+
+#logo-span{
+    color: rgb(18, 173, 166) !important;
+}
 
 /* main styling start */
 .banner{
@@ -173,80 +204,9 @@ body{
     /* overflow: hidden; */
 }
 
-.banner-flex{
-    display: flex;
-}
-
-.banner-link{
-    list-style: none;
-    float: right;
-    display: flex;
-    margin-top: 10px;
-}
-
-.banner-child-link, .logo,
- .fa-search-minus, .child-link, .activ-home{
-    margin: 4px;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-.banner-child-link:hover, .logo:hover,
- .fa-search-minus:hover, .child-link:hover, 
- .activ-home:hover{
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    color: rgb(18, 173, 166);
-    margin-top: 10px;
-}
-
-
-.fa-search-minus{
-    margin-top: 11px;
-    margin: 12px;
-    color: rgb(18, 173, 166);
-}
-
-.fa-angle-down{
-    color: rgb(18, 173, 166);
-    margin: 4px;
-}
-
-.banner-contact{
-    border: solid 2px rgb(18, 173, 166);
-    padding: 0px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-
-.banner-child-link-home{
-    border-bottom:solid 2px rgb(18, 173, 166) ;
-    margin: 0px;
-    width: 70px;
-    text-align: center;
-    color: white;
-    font-size: 12px;
-    margin-top: 10px;
-
-}
-
-.banner-child-link, .fa-search-minus, .banner-contact{
-    font-size: 12px;
-}
-.logo{
-    color: white;
-    margin: 10px;
-    margin-top: 10px;
-    margin-left: 40px;
-}
-
 .banner-box2{
     width: 100%;
-    /* margin-right: 40px; */
+    margin-right: 40px;
 }
 
 .banner-main-text{
@@ -332,12 +292,12 @@ body{
 }
 
 .service-card-container{
-    width: 88%;
+    width: 98%;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     font-size: 12px;
     padding: 0px;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 .service-group{
@@ -433,7 +393,7 @@ body{
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    width: 87%;
+    width: 100%;
 }
 
 .work-itme1, .work-itme2{
@@ -468,21 +428,32 @@ body{
     width: 80%;
     margin: 0 auto;
     padding-bottom: 50px;
+    /* border: solid red; */
   }
   .about-col{
     margin: 0;
     padding: 0;
+    margin: 0 auto !important;
+    height: 12%;
   }
 
-  .about-col-1, .about-col-2{
+   .about-col-2{
     margin: 0;
     padding: 0; 
+    margin: 0 auto !important;
+    display: block;
+    height: 64vh;
   }
 
-  .about-head{
+  .about-image{
+      width: 100% !important;
+      height: 50%;
+  }
+
+.about-head {
     border-bottom: solid 2px rgb(18, 173, 166);
     width: 6%;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .about-para{
@@ -525,6 +496,8 @@ body{
     border-bottom: solid 2px white;
 }
 
+
+
 .fa-thumbs-up{
     color: rgb(18, 173, 166);
     font-size: 30px !important;
@@ -557,7 +530,7 @@ body{
 }
 
 .test-text{
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .testi-img{
@@ -575,7 +548,7 @@ body{
 
 #test-sec{
     background-color: rgb(22, 21, 21);
-    padding-bottom: 79px;
+    padding-bottom: 0px;
 }
 
 .tes-head{
@@ -653,6 +626,10 @@ body{
     font-size: 12px;
 }
 
+.news-btn:hover{
+    color: lightgray;
+}
+
 .news-vl {
     border-left: 2px solid rgb(18, 173, 166);
     height: 60px;
@@ -665,7 +642,7 @@ body{
 .fa-facebook, .fa-whatsapp, .fa-instagram, .fa-facebook, .fa-twitter{
     color: rgb(18, 173, 166);
     border: solid 1px rgb(18, 173, 166);
-    /* font-size: 13px !important; */
+    font-size: 15px !important;
     padding: 4px;
     margin: 4px;;
     border-radius: 50px;
@@ -688,6 +665,10 @@ body{
     color: rgb(18, 173, 166);
     border: solid 2px rgb(18, 173, 166);
     padding: 10px;
+}
+
+.footer-btn:hover{
+    color: rgb(18, 173, 166);
 }
 
 .btnfooter{
@@ -776,12 +757,17 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.button-con{
+    margin: 0 auto;
+    width: 60%;
+}
+
 .rr{
     overflow: hidden;
     position: fixed;
     top: 35%; 
     right: 4%;
-    width: 20%;
+    width: 40%;
     height: 40%;
     padding: 10px;
     z-index: 1;
@@ -789,6 +775,7 @@ body{
     border-radius: 10px;
     display: none;
 }
+
 .likes{
     overflow: hidden;
     position: fixed;
@@ -800,9 +787,9 @@ body{
     background-color: blue;
     font-size: 16px !important;
     width: 40px;
-    height: 50px;
+    height: 40px;
     text-align: center;
-    padding: 10px;
+    padding: 3px;
     border-radius: 50px;
     cursor: pointer;
     margin-right: 20px;
@@ -812,8 +799,26 @@ body{
 /* converstion styling start */
 .conversation-con{
     background-color: white;
-    margin-top: 40px;
+    width: 85%;
+    margin-top: 0px;
     border: solid 1px rgb(190, 187, 187);
+    padding: 0;
+    border-radius: 5px;
+}
+
+.conversation-info{
+    border-bottom: solid 1px gray;
+    padding: 0;
+    margin: 0;
+}
+
+.conver-header{
+    font-size: 29px;
+}
+
+.inner-conver-div{
+    padding: 20px;
+    margin: 10px;
 }
 
 .face{
@@ -824,10 +829,21 @@ body{
     font-size: 20px !important;
     width: 30px !important;
     height: 30px !important;
+    margin: 0 auto !important;
+    display: block;
 }
 
-.conver-icon:hover{
-    background-color: rgb(202, 197, 197);
+.apple-img, .google-img{
+    width: 30px;
+    border: solid 1px gray;
+    padding: 7px;
+    border-radius: 50px;
+}
+
+
+.apple-img:hover, .google-img:hover{
+    background-color: rgb(224, 220, 220);
+    transition: 0.5 all;
 }
 
 .face:hover{
@@ -839,8 +855,444 @@ body{
     color: white;
     cursor: pointer;
     border-radius: 20px;
+    font-size: 12px;
 }
 
-.conversation-info{
-    border-bottom: solid 1px gray;
+.conver-btn:hover{
+    color: white;
+}
+
+.flex-conver{
+    display: flex;
+    margin: 25px;
+}
+
+.conver-2, .conver-1{
+    margin-left: 13px;
+}
+
+.coner-span{
+    font-size: 12px;
+    color: lightgray;
+    font-weight: normal;
+}
+
+/* contact styling start */
+.flex-contact{
+    display: flex;
+    margin: 10px;
+}
+
+.contact-2{
+    width: 100%;
+}
+
+.contact-2, .contact-1{
+    margin-left: 13px;
+}
+
+.contact-head{
+    font-size: 12px;
+    margin: 10px;
+    margin-left: 22px;
+    color: gray;
+    line-height: 30px;
+}
+
+.contact-para{
+    margin: 10px;
+    margin-left: 22px;
+}
+
+.contact-first-col{
+    background-color: white;
+    border: solid 1px rgb(190, 187, 187);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 50%;
+}
+
+.contact-second-col{
+    background-color: white;
+    border: solid 1px rgb(190, 187, 187);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 2px;
+}
+
+.inner-col-1{
+    background-color: white;
+    border: solid 1px rgb(190, 187, 187);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 87vh;
+    position: relative;
+    bottom: 47px;
+}
+
+.contact-button-container{
+    margin: 0 auto;
+    margin: 13px;
+
+}
+
+.contact-button-follow{
+    background-color: blue;
+    width: 100%;
+    color: white;
+    border-radius: 23px;
+    font-weight: bolder;
+}
+
+.contact-button-follow:hover{
+    color: white;
+}
+
+.contact-button-hier{
+    background-color: rgb(220, 220, 241);
+    width: 100%;
+    color: white;
+    margin-top: 11px;
+    border-radius: 23px;
+    color: blue;
+    font-weight: bolder;
+    border: solid 1px lightgray;
+}
+
+.contact-button-hier:hover{
+    color: blue;
+}
+
+.angency-para{
+    font-size: 14px;
+    margin: 10px;
+    margin-left: 22px;
+}
+
+.angency-para2{
+    margin: 10px;
+    margin-left: 22px;
+}
+
+.contact-button-develop{
+    background: url('./imgaes/news-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.contact-button-develop:hover{
+    color: white;
+}
+
+.contact-button-imlemet{
+    background: url('./imgaes/about-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.contact-button-imlemet:hover{
+    color: white;
+}
+
+.contact-button-program{
+    background: url('./imgaes/news-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.contact-button-program:hover{
+    color: white;
+
+}
+
+
+@media(max-width: 540px){
+    /* nav */
+    .hambuger{
+        color: white;
+    }
+
+    .nav-container1, .dsktop{
+        display: none;
+    }
+
+    .navbar-mobile{
+        display: block;
+        border: solid red;
+    }
+
+    .nav-container{
+        margin-top: 0px;
+        padding-top: 10px;
+        background-color: white;
+    }
+    
+
+    .nav-container1-monbile{
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: white;
+        border-bottom: solid 1px lightgray ;
+        display: block;
+    }
+
+    .fa-envelope-open, .fa-folder-open{
+        border: solid 1px lightgray;
+        padding: 4px;
+        border-radius: 50px;
+        float: right;
+        margin: 5px;
+        margin-right: 2% !important;
+        font-size: 13px !important;
+        cursor: pointer;
+    }
+
+    .btn-nav-follow{
+        float: right;
+        font-size: 13px;
+        width: 29%;
+        margin: 2px;
+        margin-right: 3% !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    .profile{
+        font-size: 12px;
+    }
+
+    .nav-img{
+        width: 26px;
+        height: 28px;
+        border-radius: 50px;
+    }
+
+    .navbarlink{
+        color: rgb(18, 173, 166) !important;
+        margin: 0px;
+        text-align: center !important;
+        /* margin: 0 auto; */
+    }
+
+    /* banner styling */
+    .banner-container{
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 20px !important;
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .banner{
+        background: url("./imgaes/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 174vh !important;
+        margin: 0;
+    }
+
+    .banner-main-btn{
+        font-size: 10px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .bannner-card{
+        margin: 0px;
+        margin: 0 auto;
+        width: 90% !important;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .banner-main-text {
+        text-align: center;
+    }
+
+    .banner-main-header{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /* service stayling start */
+    
+    .service-section{
+        background-color:rgb(0, 0, 15); 
+        padding-bottom: 30px;  
+    }
+
+.service-card{
+    margin: 0px;
+    margin: 0 auto;
+    width: 95% !important;
+    font-size: 13px;
+    border-bottom: solid 2px white;
+}
+
+.service-card-container{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    font-size: 12px;
+    padding: 0px;
+    padding-top: 0px;
+}
+
+/* work-styling start */
+
+#work-sec{
+    background-color: rgb(27, 26, 26);
+    padding: 0px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    /* border: solid red; */
+}
+
+.work-image{
+    width: 100%;
+    height: 130%;
+    margin:  0 auto;
+    display: block;
+}
+
+.work-head{
+    font-size: 30px;
+}
+
+.work-card-body{
+    margin: 0;
+    padding: 0;
+}
+
+.work-card{
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.work-fex{
+    align-items: center;
+    width: 100%;
+}
+
+/* about styling */
+
+.about-head {
+    border-bottom: solid 2px rgb(18, 173, 166);
+    width: 6%;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.kil{
+    width: 100%;
+}
+
+  /* testimonials styling start */
+  .test-card{
+    background-color: rgb(22, 21, 21);
+    color: white;
+    margin: 0px;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 90% !important;
+}
+
+.tes-head{
+    border-bottom: solid 2px rgb(18, 173, 166);
+    width: 6%;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.testimonials-title{
+    width: 100%;
+}
+
+.test-group{
+    padding-top: 0px;
+}
+
+/* news styling */
+#news-sec{
+    background-color:rgb(0, 0, 15);
+    padding-bottom: 0px;
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.kik{
+    margin-top: 30px !important;
+}
+
+/* converstion styling start */
+.conversation-con{
+    background-color: white;
+    width: 100%;
+}
+
+/* contact styling start */
+.flex-contact{
+    display: flex;
+    margin: 0px;
+}
+
+.contact-second-col{
+    padding-bottom: 20px;
+    position: relative;
+    left: 0px;
+}
+
+
+.inner-col-1{
+    width: 87vh;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 47px;
+    top: 2px;
+}
+
+.rr{
+    overflow: hidden;
+    position: fixed;
+    top: 35%; 
+    right: 4%;
+    width: 93%;
+    height: 40%;
+    padding: 10px;
+}
+
+
+.button-con{
+    margin: 0 auto;
+    width: 100%;
+}
+
 }

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <!-- icon link -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <title>Digital Agency on Behance</title>
 </head>
 
@@ -47,7 +47,6 @@
 
   <section>
     <section class="dd">
-
       <div class="nav-container">
         <div class="box-2">
           <button type="button" class="btn btn-nav-follow" id="btn-f">follow</button>
@@ -59,7 +58,8 @@
               <img class="nav-img" src="./imgaes/me.jpeg" alt="">
             </div>
             <div class="item-2">
-              <p><b>Jonathan John</b> <br> <a href="https://jonathan948.github.io/Portfolio2/" class="profile-link">Front-end Developer</a></p>
+              <p class="profile"><b>Jonathan John</b> <br> <a href="https://jonathan948.github.io/Portfolio2/"
+                  class="profile-link">Front-end Developer</a></p>
             </div>
           </div>
         </div>
@@ -67,32 +67,45 @@
 
     </section>
     <!-- main section -->
-    <section class="aa">
+    <section class="aa" id="home">
       <div class="banner">
-        <nav>
-          <div class="banner-flex">
-            <div class="banner-box1">
-              <h4 class="logo">JONADEV</h4>
-            </div>
+        <nav class="navbar container navbar-expand-lg navbar-light">
+          <a class="navbar-brand nav-lo" href="#">JONA<span id="logo-span">DEV</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fa fa-bars text-white" aria-hidden="true"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link navbarlink" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbarlink" href="#">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbarlink" href="#">Works</a>
+              </li>
 
-            <div class="banner-box2">
-              <ul class="banner-link">
-                <li class="banner-child-link-home "><a href="" class="activ-home"> Home <i class="fa fa-angle-down"
-                      aria-hidden="true"></i></a> </li>
-                <li class="banner-child-link"><a class="child-link" href="">Service</a></li>
-                <li class="banner-child-link"><a class="child-link" href="">Works</a></li>
-                <li class="banner-child-link"><a class="child-link" href="">About</a></li>
-                <li class="banner-child-link"><a class="child-link" href="">Blog</a> </li>
-                <li class="banner-contact"><a href="" class="child-link">contact <i class="fa fa-angle-down"
-                      aria-hidden="true"></i></a> </li>
-                <i class="fa fa-search-minus" aria-hidden="true"></i>
-              </ul>
-            </div>
+              <li class="nav-item">
+                <a class="nav-link navbarlink" href="#">Testimonials</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link navbarlink" href="#">LatestNews</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link navbarlink" href="#">contact </a>
+              </li>
+            </ul>
           </div>
         </nav>
 
-        <div class="banner-container">
-          <p class="banner-main-text">CREATIVE MIND, CREATIVE WORK</p>
+        <div class="banner-container container">
+          <p class="banner-main-text pt-4">CREATIVE MIND, CREATIVE WORK</p>
           <h1 class="banner-main-header">We are digital <br> agency.</h1>
           <button type="button" class=" btn-b banner-main-btn">getting started</button>
 
@@ -131,8 +144,9 @@
         </div>
       </div>
     </section>
+
     <!-- service-section -->
-    <section class="service-section">
+    <section class="service-section" id="service">
       <div class="container">
         <div class="service-card-container">
           <h1 class="ser-head text-center text-white ">Service</h1>
@@ -199,6 +213,7 @@
         <div class="ser-vl"></div>
       </div>
     </section>
+
     <!-- work-section -->
     <section id="work-sec">
       <div class="container work-w">
@@ -260,20 +275,20 @@
 
       <div class="work-vl"></div>
     </section>
+
     <!-- about section -->
     <section id="about-sec">
       <div class="container about-con">
-
-        <h1 class="about-head text-center text-white ">Service</h1>
+        <h1 class="about-head text-white ">About</h1>
         <p class="about-para">we are more than digital agency</p>
         <div class="row">
           <div class="col-md-6 p-2 about-col">
-            <img src="./imgaes/about-1.jpg" alt="" width="100%" height="100%">
+            <img src="./imgaes/about-1.jpg" alt="" width="100%" height="20%">
           </div>
 
-          <div class="col-md-6 about-col">
-            <img class="p-2" src="./imgaes/about-2.jpg" alt="" width="100%">
-            <img class="p-2" src="./imgaes/about-3.jpg" alt="" width="100%">
+          <div class="col-md-6 about-col-2">
+            <img class="p-2 about-image" src="./imgaes/about-2.jpg" alt="">
+            <img class="p-2 about-image" src="./imgaes/about-3.jpg" alt="">
 
           </div>
         </div>
@@ -281,22 +296,25 @@
         <div class="row">
           <div class="col-md-4">
             <h3 class="about-bottom-hearder">who we are</h3>
-            <p class="about-bottom-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et tenetur error fugiat? Laudantium itaque cum
+            <p class="about-bottom-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et tenetur error
+              fugiat? Laudantium itaque cum
             </p>
           </div>
           <div class="col-md-4 about-bottom-col">
             <h3 class="about-bottom-hearder">our philosophy</h3>
-            <p class="about-bottom-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et tenetur error fugiat? Laudantium itaque cum
+            <p class="about-bottom-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et tenetur error
+              fugiat? Laudantium itaque cum
             </p>
           </div>
           <div class="col-md-4 about-bottom-col-last">
             <h3 class="about-bottom-hearder">how we work</h3>
-            <p class="about-bottom-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et tenetur error fugiat? Laudantium itaque cum
+            <p class="about-bottom-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et tenetur error
+              fugiat? Laudantium itaque cum
             </p>
           </div>
         </div>
 
-      <div class="about-vl"></div>
+        <div class="about-vl"></div>
       </div>
     </section>
 
@@ -311,14 +329,15 @@
         <div class="card test-card ">
           <div class="card-body">
             <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-            <p class="card-text test-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia repud Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="card-text test-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia
+              repud Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
             <div class="star-flex">
               <div class="star-1">
                 <i class="fa fa-star" aria-hidden="true"></i>
               </div>
               <div class="star-2">
-            <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
               </div>
               <div class="star-3">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -341,13 +360,14 @@
         <div class="card test-card">
           <div class="card-body">
             <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-            <p class="card-text test-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia repud Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="card-text test-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia
+              repud Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             <div class="star-flex">
               <div class="star-1">
                 <i class="fa fa-star" aria-hidden="true"></i>
               </div>
               <div class="star-2">
-            <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
               </div>
               <div class="star-3">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -371,13 +391,14 @@
         <div class="card test-card">
           <div class="card-body">
             <i class="fa fa-thumbs-up hh" aria-hidden="true"></i>
-            <p class="card-text test-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia repud Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="card-text test-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia
+              repud Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             <div class="star-flex">
               <div class="star-1">
                 <i class="fa fa-star" aria-hidden="true"></i>
               </div>
               <div class="star-2">
-            <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
               </div>
               <div class="star-3">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -401,13 +422,14 @@
         <div class="card test-card">
           <div class="card-body">
             <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-            <p class="card-text test-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia repud Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="card-text test-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia
+              repud Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             <div class="star-flex">
               <div class="star-1">
                 <i class="fa fa-star" aria-hidden="true"></i>
               </div>
               <div class="star-2">
-            <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
               </div>
               <div class="star-3">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -438,7 +460,9 @@
       </div>
       <div class="about-vl"></div>
     </section>
-<!-- news-section -->
+
+
+    <!-- news-section -->
     <section id="news-sec">
       <div class="container">
         <h2 class="news-header text-center">Latest news</h2>
@@ -446,24 +470,27 @@
       </div>
 
       <div class="card-group">
-        <div class="card m-2">
+        <div class="card m-2 kik">
           <img class="card-img-top" src="./imgaes/news-1.jpg" alt="Card image cap" height="59%">
           <div class="card-body news-caed-body">
-            <p class="card-tex"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus tempore ad eaque recusandae nobis dolore quia, molestias ipsum </p>
+            <p class="card-tex"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus tempore ad eaque
+              recusandae nobis dolore quia, molestias ipsum </p>
             <button class="btn news-btn">Read More</button>
           </div>
         </div>
-        <div class="card m-2">
+        <div class="card m-2 kik">
           <img class="card-img-top" src="./imgaes/news-2.jpg" alt="Card image cap" height="59%">
           <div class="card-body news-caed-body">
-            <p class="card-tex"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus tempore ad eaque recusandae nobis dolore quia, molestias ipsum </p>
+            <p class="card-tex"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus tempore ad eaque
+              recusandae nobis dolore quia, molestias ipsum </p>
             <button class="btn news-btn">Read More</button>
           </div>
         </div>
-        <div class="card m-2">
+        <div class="card m-2 kik">
           <img class="card-img-top" src="./imgaes/news-3.jpg" alt="Card image cap" height="60%">
           <div class="card-body news-caed-body">
-            <p class="card-tex"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus tempore ad eaque recusandae nobis dolore quia, molestias ipsum </p>
+            <p class="card-tex"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus tempore ad eaque
+              recusandae nobis dolore quia, molestias ipsum </p>
             <button class="btn news-btn">Read More</button>
           </div>
         </div>
@@ -476,94 +503,262 @@
         <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
         <h2 class="socail-header">Have any project in mind?</h2>
         <div class="btnfooter">
-        <button type="button" class="btn footer-btn">Make inquiry</button>
-          
-        </div>
-    </div>
+          <button type="button" class="btn footer-btn">Make inquiry</button>
 
-    <!-- footer section -->
-    <div class="container box-footer">
-      <footer>
-        <div class="row footer-row">
-          <div class="col-md-3">
-            <h4 class="footer-logo text-white">JONADEV</h4>
-            <ul class="footerlink">
-              <li class="footer-para">We are more than digital agency</li>
-            </ul>
-            <div class="footer-line"></div>
-          </div>
-
-          <div class="col-md-3 call-col">
-            <h4 class="footer-head">Contact</h4>
-            <ul class="footerlink">
-              <li class="footer-para"><i class="fa fa-whatsapp call" aria-hidden="true"><span class="call-num">(+234)7013890958</span></i></li>
-              <li class="footer-para"><i class="fa fa-whatsapp call" aria-hidden="true"><span class="call-num">johnjonathan948@gmail.com</span></i></li>
-              <li class="footer-para"><i class="fa fa-whatsapp call" aria-hidden="true"><span class="call-num">Lagos Likke Aajah</span></i></li>
-              <li class="footer-para"><i class="fa fa-whatsapp call" aria-hidden="true"><span class="call-num">Sunday-Friday</span></i></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h4 class="footer-head">Our Service</h4>
-            <ul class="footerlink">
-              <li class="footer-para">Single project</li>
-              <li class="footer-para">Service 1</li>
-              <li class="footer-para">Service 2</li>
-              <li class="footer-para">Work</li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h4 class="footer-head">About Us</h4>
-            <ul class="footerlink">
-              <li class="footer-para">About</li>
-              <li class="footer-para">Portfolio</li>
-              <li class="footer-para">contact 1</li>
-              <li class="footer-para">contact 2</li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-    <div class="likes-con">
-      <div class="rr">
-        <i class="fa fa-times cancel2 " aria-hidden="true"></i>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia magni cumque quaerat corporis repellendus ducimus accusantium ipsa sunt. Corrupti.</div>
-
-      <i class="fa fa-thumbs-up likes " id="btnl" aria-hidden="true"><br>
-         <span class="num-of-likes"></span></i>
-    </div>
-
-    <div class="last-footer-line"></div>
-    <div class="container box-footer1">
-      <div class="row text-white footer-row">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-4"><p class="footer-info1">Copyright JONADEV</p></div>
-            <div class="col-md-4"><p class="footer-info">PRIVACY POLICY</p></div>
-            <div class="col-md-4"><p class="footer-info">TEAMS OF USER</p></div>
-          </div>
-          <p class="footer-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, velit!</p>
-        </div>
-        <div class="col-md-6 last-footer-icon">
-          <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
         </div>
       </div>
-    </div>
+
+      <!-- footer section -->
+      <div class="container box-footer">
+        <footer>
+          <div class="row footer-row">
+            <div class="col-md-3">
+              <h4 class="footer-logo text-white">JONADEV</h4>
+              <ul class="footerlink">
+                <li class="footer-para">We are more than digital agency</li>
+              </ul>
+              <div class="footer-line"></div>
+            </div>
+
+            <div class="col-md-3 call-col">
+              <h4 class="footer-head">Contact</h4>
+              <ul class="footerlink">
+                <li class="footer-para"><i class="fa fa-whatsapp call" aria-hidden="true"><span
+                      class="call-num">(+234)7013890958</span></i></li>
+                <li class="footer-para"><i class="fa fa-whatsapp call" aria-hidden="true"><span
+                      class="call-num">johnjonathan948@gmail.com</span></i></li>
+                <li class="footer-para"><i class="fa fa-whatsapp call" aria-hidden="true"><span class="call-num">Lagos
+                      Likke Aajah</span></i></li>
+                <li class="footer-para"><i class="fa fa-whatsapp call" aria-hidden="true"><span
+                      class="call-num">Sunday-Friday</span></i></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4 class="footer-head">Our Service</h4>
+              <ul class="footerlink">
+                <li class="footer-para">Single project</li>
+                <li class="footer-para">Service 1</li>
+                <li class="footer-para">Service 2</li>
+                <li class="footer-para">Work</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4 class="footer-head">About Us</h4>
+              <ul class="footerlink">
+                <li class="footer-para">About</li>
+                <li class="footer-para">Portfolio</li>
+                <li class="footer-para">contact 1</li>
+                <li class="footer-para">contact 2</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <div class="likes-con">
+        <div class="rr">
+          <i class="fa fa-times cancel2 " aria-hidden="true"></i>
+          <h2 class="text-center mt-4">Join Behance</h2>
+          <p class="text-center"> Sign up or Sign in to view personalized recommendations, follow creatives, and more.
+          </p>
+
+          <div class="button-con">
+            <button type="button" class="btn conver-btn">Sign Up With Email</button> or
+            <a href=""><img class="apple-img m-2" src="./imgaes/apple.png" alt=""></a>
+            <a href=""><i class="fa fa-facebook face m-2" aria-hidden="true"></i></a>
+            <a href=""><img class="google-img m-2" src="./imgaes/google.png" alt=""></a>
+          </div>
+        </div>
+
+        <i class="fa fa-thumbs-up likes " id="btnl" aria-hidden="true"><br>
+          <span class="num-of-likes"></span></i>
+      </div>
+
+      <div class="last-footer-line"></div>
+      <div class="container box-footer1">
+        <div class="row text-white footer-row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-4">
+                <p class="footer-info1">Copyright JONADEV</p>
+              </div>
+              <div class="col-md-4">
+                <p class="footer-info">PRIVACY POLICY</p>
+              </div>
+              <div class="col-md-4">
+                <p class="footer-info">TEAMS OF USER</p>
+              </div>
+            </div>
+            <p class="footer-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, velit!</p>
+          </div>
+          <div class="col-md-6 last-footer-icon">
+            <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- conversation section -->
     <section>
-      <div class="container conversation-con">
-     <div class="conversation-info">
-       <h1 class="conver-header">Sign up to join the conversation.</h1>
-       <p class="conver-para">Add your feedback for Jonathan John by signing in or signing up</p>
-       <button type="button" class="btn conver-btn">Sign Up With Email</button> or
-       <a href=""><i class="fa fa-instagram conver-icon" aria-hidden="true"></i></a>
-       <a href=""><i class="fa fa-facebook face" aria-hidden="true"></i></a>
-       <a href=""><i class="fa fa-twitter conver-icon" aria-hidden="true"></i></a>
-     </div>
+      <div class="container conversation-con mt-3">
+        <div class="conversation-info">
+          <div class="inner-conver-div">
+            <h1 class="conver-header">Sign up to join the conversation.</h1>
+            <p class="conver-para">Add your feedback for Jonathan John by signing in or signing up</p>
+            <button type="button" class="btn conver-btn">Sign Up With Email</button> or
+            <a href=""><img class="apple-img m-2" src="./imgaes/apple.png" alt=""></a>
+            <a href=""><i class="fa fa-facebook face m-2" aria-hidden="true"></i></a>
+            <a href=""><img class="google-img m-2" src="./imgaes/google.png" alt=""></a>
+          </div>
+        </div>
+
+        <div class="flex-conver">
+          <div class="conver-1">
+            <img class="nav-img" src="./imgaes/test-1.jpg" alt="">
+          </div>
+          <div class="conver-2">
+            <p><b>Fadex Web Solutions <span class="coner-span">- 9 days ago</span></b> <br> Nice Front-end work</p>
+          </div>
+        </div>
+
+        <div class="flex-conver">
+          <div class="conver-1">
+            <img class="nav-img" src="./imgaes/test-2.jpg" alt="">
+          </div>
+          <div class="conver-2">
+            <p><b>Григорий Сухатерин <span class="coner-span">- 4 days ago</span></b> <br> Fantastic!!!</p>
+          </div>
+        </div>
+
+
+        <div class="flex-conver">
+          <div class="conver-1">
+            <img class="nav-img" src="./imgaes/test-3.jpg" alt="">
+          </div>
+          <div class="conver-2">
+            <p><b>Nikita Iudin <span class="coner-span">- 2 days ago</span></b> <br> I have always liked the dark
+              design, I like it, there will be time to rate my project please</p>
+          </div>
+        </div>
+
+
+        <div class="flex-conver">
+          <div class="conver-1">
+            <img class="nav-img" src="./imgaes/test-4.jpg" alt="">
+          </div>
+          <div class="conver-2">
+            <p><b>Ruben Gutierrez <span class="coner-span">- 3 days ago</span></b> <br> the futuristic theme is awesome
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-conver">
+          <div class="conver-1">
+            <img class="nav-img" src="./imgaes/chat-1.jpg" alt="">
+          </div>
+          <div class="conver-2">
+            <p><b>
+                gmocamilo td. <span class="coner-span">- 5 days ago</span></b> <br>very good</p>
+          </div>
+        </div>
+
+
+        <div class="flex-conver">
+          <div class="conver-1">
+            <img class="nav-img" src="./imgaes/chat-2.jpg" alt="">
+          </div>
+          <div class="conver-2">
+            <p><b>Hany Magdy ✪‌ <span class="coner-span">- 7 days ago</span></b> <br> Amazing work</p>
+          </div>
+        </div>
+
+        <div class="flex-conver">
+          <div class="conver-1">
+            <img class="nav-img" src="./imgaes/chat-3.jpg" alt="">
+          </div>
+          <div class="conver-2">
+            <p><b> Maryna Shevchenko <span class="coner-span">- 7 days ago</span></b> <br> Such a clear and stylish
+              work! I like it so much! Well done</p>
+          </div>
+        </div>
+
+
+        <div class="flex-conver">
+          <div class="conver-1">
+            <img class="nav-img" src="./imgaes/chat-4.jpg" alt="">
+          </div>
+          <div class="conver-2">
+            <p><b>Kateryna Yalova <span class="coner-span">- 7 days ago</span></b> <br>Awesome work! I like it!</p>
+          </div>
+        </div>
+
+
+        <div class="flex-conver">
+          <div class="conver-1">
+            <img class="nav-img" src="./imgaes/me.jpeg" alt="">
+          </div>
+          <div class="conver-2">
+            <p><b>Jonathan John <span class="coner-span">- 8 days ago</span></b> <br>I Thank all of you</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- contact us -->
+    <section id="contact">
+      <div class="container mt-3 ">
+        <div class="row">
+
+          <div class="col-md-6 contact-first-col ">
+            <h4 class="contact-head">OWNER</h4>
+            <div class="flex-contact">
+              <div class="contact-1">
+                <img class="nav-img" src="./imgaes/me.jpeg" alt="">
+              </div>
+              <div class="contact-2">
+                <p><b>Jonathan John <span class="coner-span"></span></b> <br> <i class="fa fa-map-marker m-1"
+                    aria-hidden="true"></i>Lekki Ajah Lagos Nigeria</p>
+              </div>
+
+            </div>
+
+            <div class="contact-button-container">
+              <button type="button" class="btn contact-button-follow"><i class="fa fa-plus-circle m-2"
+                  aria-hidden="true"></i>Follow</button>
+              <a href="https://jonathan948.github.io/Portfolio2/">
+                <button type="button" class="btn contact-button-hier"><i class="fa fa-envelope m-2"
+                    aria-hidden="true"></i>Hier Me</button>
+              </a>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 contact-second-col">
+            <h4 class="contact-head">TOOLS</h4>
+            <p class="contact-para">Front-End Developer, Front-End Development Programming</p>
+            <h4 class="contact-head">CREATIVE FIELDS</h4>
+            <div class="contact-button-container">
+              <button type="button" class="btn contact-button-develop">HTML</button>
+              <button type="button" class="btn contact-button-imlemet">CSS & BOOTSTRAP</button>
+              <button type="button" class="btn contact-button-program">JAVASCRIPT</button>
+            </div>
+            <div class="inner-col-2">
+
+            </div>
+          </div>
+
+          <div class="inner-col-1">
+            <h1 class="angency-para">Digital Agency</h1>
+            <p class="angency-para2">
+              <i class="fa fa-thumbs-o-up m-1" aria-hidden="true">44</i> <i class="fa fa-eye m-1"
+                aria-hidden="true">20.5k</i> <i class="fa fa-commenting" aria-hidden="true">949</i> <br>
+              Published: May 17th 2021
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </section>

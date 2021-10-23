@@ -1,3 +1,4 @@
+
 // navbar logic
 const open = document.querySelector('.fa-bars');
 const bg = document.querySelector('.box-nav');
@@ -49,6 +50,10 @@ let count = 120;
       }
       value.textContent = count;
     });
+
+
+
+
 
 
 
